@@ -1,0 +1,16 @@
+secret_id: "your_secret_id"        # 替换为你的腾讯云 SecretId
+secret_key: "your_secret_key"      # 替换为你的腾讯云 SecretKey
+cert_paths:
+  fullchain_pem: "./cert/fullchain.pem"   # 替换为你的证书文件路径
+  privkey_pem: "./cert/privkey.pem"       # 替换为你的私钥文件路径
+validate_cert_api: "ssl.tencentcloudapi.com"
+services_to_deploy:
+  - "service1"
+  - "service2"
+log:
+  enable: true
+  path: "./ssl_cert_manager.log"
+  max_size: 10      # 单个日志文件最大大小（MB）
+  max_backups: 5    # 保留的旧日志文件数量
+  max_age: 30       # 旧日志文件保留天数
+  compress: true    # 是否压缩旧日志文件

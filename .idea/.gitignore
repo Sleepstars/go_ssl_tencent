@@ -1,0 +1,21 @@
+# 默认忽略的文件
+/shelf/
+/workspace.xml
+# 基于编辑器的 HTTP 客户端请求
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+# IDE 配置文件
+*.iml
+/modules.xml
+/vcs.xml
+/.idea/
+# Go IDE 特定文件
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/inspectionProfiles
+.idea/inspectionProfiles/Project_Default.xml
